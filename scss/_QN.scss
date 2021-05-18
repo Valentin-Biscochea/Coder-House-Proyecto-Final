@@ -1,0 +1,335 @@
+@media only screen and (min-width:1200px){
+
+$Sombra:15px 12px 20px 5px #000;
+#QHGrid{
+		padding: 5vw;
+		height: 225vh;
+		width: 94vw;
+		margin: 5vh 0vw ;
+		display: grid;
+		grid-gap: 1vw ;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+		"QHA QHA "
+		"QHB QHB "
+		"QHC QHC "
+		"QHD QHD ";
+		align-items: center;
+		justify-content: space-around;
+		align-content: start;
+		font-size: 1vw;
+		
+
+
+
+
+
+				#QHA{
+					grid-area: QHA;
+					display:flex; 
+					flex-direction: row;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+									
+								}
+
+					}
+
+				
+				
+
+
+				#QHB{
+					grid-area: QHB;
+					display:flex; 
+					flex-direction: row-reverse;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+							}
+					}
+
+
+				
+
+				
+
+				#QHC{
+					grid-area: QHC;
+					display:flex; 
+					flex-direction: row;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					
+					div{
+						border: solid white 0.2vw;
+						}
+				}
+
+				
+
+				
+
+				#QHD{
+					grid-area: QHD;
+					display:flex; 
+					flex-direction: row-reverse;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+				
+					div{
+						border: solid white 0.2vw;
+						}
+
+				}
+
+				
+
+				.QSImagenes{
+					width:30vw;
+					height:45vh;
+				}
+				
+				.QSText{
+					transition: all 4s;
+					color: #ffffff;
+					opacity: 0.0; 
+				}
+				.QSText:hover {
+					
+					color: #000;
+					opacity:1.0;
+					font-size:2em;
+				}
+			
+ 		}
+}
+
+
+
+
+
+@media only screen and (min-width:600px)and(max-width:1199px){
+	$Sombra:15px 12px 20px 5px #000;
+	#QHGrid{
+		padding: 5vw;
+		height: 150vh;
+		width: 94vw;
+		margin: 5vh 0vw ;
+		display: grid;
+		grid-gap: 8vh ;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+		"QHA QHA "
+		"QHB QHB "
+		"QHC QHC "
+		"QHD QHD ";
+		align-items: center;
+		justify-content: space-around;
+		align-content: start;
+		font-size: 1vw;
+		
+
+
+
+
+
+				#QHA{
+					grid-area: QHA;
+					display:flex; 
+					flex-direction: row;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+									
+								}
+
+					}
+
+				
+				
+
+
+				#QHB{
+					grid-area: QHB;
+					display:flex; 
+					flex-direction: row-reverse;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+							}
+					}
+
+
+				
+
+				
+
+				#QHC{
+					grid-area: QHC;
+					display:flex; 
+					flex-direction: row;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					
+					div{
+						border: solid white 0.2vw;
+						}
+				}
+
+				
+
+				
+
+				#QHD{
+					grid-area: QHD;
+					display:flex; 
+					flex-direction: row-reverse;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+				
+					div{
+						border: solid white 0.2vw;
+						}
+
+				}
+
+				
+
+				.QSImagenes{
+					width:40vw;
+					height:27vh;
+				}
+				
+				.QSText{
+					font-size:3em;
+					
+				}
+				
+			
+ 		}
+	
+}
+
+
+@media only screen and (min-width:300px)and(max-width:599px){
+				
+			$Sombra:15px 12px 20px 5px #000;
+	#QHGrid{
+		padding: 5vw;
+		height: 200vh;
+		width: 94vw;
+		margin: 5vh 0vw ;
+		display: flex;
+		flex-direction:column;
+		grid-gap: 8vh ;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 2fr ;
+		grid-template-areas: 
+		"QHA "
+		"QHB "
+		"QHC "
+		"QHD ";
+		align-items: center;
+		justify-content: space-around;
+		align-content: start;
+		font-size: 1vw;
+		
+
+
+
+
+
+				#QHA{
+					grid-area: QHA;
+					display:flex; 
+					flex-direction: column;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+									
+								}
+
+					}
+
+				
+				
+
+
+				#QHB{
+					grid-area: QHB;
+					display:flex; 
+					flex-direction: column;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					div{
+						border: solid white 0.2vw;
+							}
+					}
+
+
+				
+
+				
+
+				#QHC{
+					grid-area: QHC;
+					display:flex; 
+					flex-direction: column;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+					
+					
+					div{
+						border: solid white 0.2vw;
+						}
+				}
+
+				
+
+				
+
+				#QHD{
+					grid-area: QHD;
+					display:flex; 
+					flex-direction: column;
+					flex-wrap: nowrap;
+					box-shadow:$Sombra;
+				
+					div{
+						border: solid white 0.2vw;
+						}
+
+				}
+
+				
+
+				.QSImagenes{
+					width:85vw;
+					height:25vh;
+					align-items:center;
+				}
+				
+				.QSText{
+					font-size:4em;
+				}
+				
+			
+ 		}
+}   

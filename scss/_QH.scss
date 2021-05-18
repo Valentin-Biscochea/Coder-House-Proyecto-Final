@@ -1,0 +1,593 @@
+
+$imgW:22vw;
+$imgH:35vh;
+
+@media only screen and (min-width:1199px){
+	*{
+	margin:0;
+	padding:0;
+	}
+
+
+
+
+	@mixin formas( $margin,$FlexTamaño,$FlexCrecimiento,$display,$opacity,$z-index,$box-shadow){
+		margin:$margin;
+		flex-basis: $FlexTamaño;
+		flex-grow: $FlexCrecimiento;	
+		display:$display;
+		opacity: $opacity;
+		z-index: $z-index;
+		box-shadow:$box-shadow;
+
+	}
+	@mixin formas-2($Content,$Position,$Top,$Left,$Width,$height,$opacity,$z-index,$BackImg,$BackSize,$BackPosi,$ImgRed,$box-shadow){
+		content:$Content;
+		position: $Position;
+		top: $Top; 
+		left: $Left;
+		width: $Width; 
+		height: $height;  
+		opacity: $opacity; 
+		z-index: $z-index;
+		background-image: $BackImg;
+		background-size:$BackSize;
+		background-position:$BackPosi;
+		image-rendering: $ImgRed;
+		box-shadow:$box-shadow;
+	}
+	.Contenedor__QH{
+		height:180vh;
+		display:grid;
+		grid-template-rows: 18vw 18vw 18vw 18vw;
+		grid-template-columns: 95vw;
+		grid-gap:8vw ;
+		margin: 0 1vw ;
+		grid-template-areas: 
+				"Div__QHSA "
+				"Div__QHSB "
+				"Div__QHSC "
+				"Div__QHSD ";
+				
+
+					#Div__QHSA{
+					grid-area:Div__QHSA;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:nowrap;
+
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+
+							#QHSA_FC{
+									@include formas(1vh 0.5vw,2, 2, inline-block,1.0,1, 15px 8px 20px 2px #000);
+								
+									img{
+										width:$imgW;
+										height:$imgH;
+										}	    
+									}
+
+							#QHSA_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;	
+										 
+									}
+							#QHSA_SC ::before {
+									@include formas-2("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhP.jpeg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset);
+									
+												}			
+			 
+			  				}	
+
+
+				#Div__QHSB{
+				grid-area:Div__QHSB;
+				display:flex;
+				flex-direction: row;
+				flex-wrap:notwrap;
+				justify-content: space-around;
+				margin:auto;
+				padding:auto;
+
+
+						#QHSB_FC{
+							    @include formas( 1vh 0.5vw,2,2,block,1.0,1,15px 8px 20px 2px #000);
+							    
+							   	img{
+									width:$imgW;
+									height:$imgH;
+									}  
+								}
+
+						#QHSB_SC{
+								position: relative;
+			  					z-index: 1;	
+								margin:0 0.5vw;
+								padding:0.5vw;		 
+								}
+						#QHSB_SC ::before {
+								@include formas-2("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhInst.jpg),cover, 10% 45%, auto,0px 0px 10px 5px #570082 inset)
+								
+										}
+							}
+			
+				#Div__QHSC{
+				grid-area:Div__QHSC;
+				display:flex;
+				flex-direction: row;
+				flex-wrap:notwrap;
+				justify-content: space-around;
+				margin:auto;
+				padding:auto;
+
+						#QHSC_FC{
+								 @include formas(1vh 0.5vw,2,2,block,1.0,1,15px 8px 20px 2px #000);
+								 
+								img{
+									width:$imgW;
+									height:$imgH;
+									}
+								}
+						#QHSC_SC{
+								position: relative;
+			  					z-index: 1;	
+								margin:0 0.5vw;
+								padding:0.5vw;		 
+								}
+						 #QHSC_SC ::before {
+						 		@include formas-2("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhExpli.jpg),cover, 50% 25%, auto,0px 0px 10px 5px #570082 inset)
+							
+											}
+							}
+				
+				#Div__QHSD{
+				grid-area:Div__QHSD;
+				display:flex;
+				flex-direction: row;
+				flex-wrap:notwrap;
+				justify-content: space-around; 
+				margin:auto;
+				padding:auto;
+						#QHSD_FC{
+							    @include formas(1vh 0.5vw,2,2,block,1.0,1,15px 8px 20px 2px #000);
+
+							    	img{
+										width:$imgW;
+										height:$imgH;
+										}
+								}
+						#QHSD_SC{
+								position: relative;
+			  					z-index: 1;	
+								margin:0 0.5vw;
+								padding:0.5vw;		 
+								}
+						 #QHSD_SC ::before {
+						 		@include formas-2("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhRedes.jpg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset)
+							
+								}   
+							}
+				
+			
+				  	
+			
+				}	
+	
+			
+
+ }
+
+@media only screen and (min-width:600px)and(max-width:1199px){
+	*{
+		margin:0;
+		padding:0;
+	}
+
+
+	$imgWTab:45vw;
+	$imgHTab:25vh;
+
+	@mixin formasC( $margin,$FlexTamaño,$FlexCrecimiento,$display,$opacity,$z-index){
+		margin:$margin;
+		flex-basis: $FlexTamaño;
+		flex-grow: $FlexCrecimiento;	
+		display:$display;
+		opacity: $opacity;
+		z-index: $z-index;
+		
+	}
+	@mixin formas-2C($Content,$Position,$Top,$Left,$Width,$height,$opacity,$z-index,$BackImg,$BackSize,$BackPosi,$ImgRed,$box-shadow){
+		content:$Content;
+		position: $Position;
+		top: $Top; 
+		left: $Left;
+		width: $Width; 
+		height: $height;  
+		opacity: $opacity; 
+		z-index: $z-index;
+		background-image: $BackImg;
+		background-size:$BackSize;
+		background-position:$BackPosi;
+		image-rendering: $ImgRed;
+		box-shadow:$box-shadow;
+
+
+	}
+
+
+
+	.Contenedor__QH{
+
+		height:170vh;
+		font-size:1.8em;
+		width:100vw;
+		display:grid;
+		grid-template-rows: 3fr 3fr ;
+		grid-template-columns: 2fr 2fr ;
+		grid-gap:8vw ;
+		margin: 0 3vw ;
+		grid-template-areas: 
+				"Div__QHSA Div__QHSB"
+				"Div__QHSC Div__QHSD "
+				;
+			margin: auto ;
+	
+					#Div__QHSA{
+					grid-area:Div__QHSA;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+
+								#QHSA_FC{
+										@include formasC(1vh 0.5vw,2, 2, inline-block,1.0,1);
+									
+										img{
+											width:$imgWTab;
+											height:$imgHTab;
+											}	    
+										}
+
+								#QHSA_SC{
+										position: relative;
+					  					z-index: 1;	
+										margin:0 0.5vw;
+										padding:0.5vw;		 
+										}
+								#QHSA_SC ::before {
+										@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhP.jpeg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset);
+										
+									}			
+					 
+				  				}
+
+
+					#Div__QHSB{
+					grid-area:Div__QHSB;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+
+							#QHSB_FC{
+								    @include formasC( 1vh 0.5vw,2,2,block,1.0,1);
+								    
+								   	img{
+										width:$imgWTab;
+										height:$imgHTab;
+										} 
+									}
+
+							#QHSB_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							#QHSB_SC ::before {
+									@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhInst.jpg),cover, 85% 45%, auto,0px 0px 10px 5px #570082 inset)
+									
+										}
+								}
+				
+					#Div__QHSC{
+					grid-area:Div__QHSC;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+							#QHSC_FC{
+									 @include formasC(1vh 0.5vw,2,2,block,1.0,1);
+									 
+									img{
+										width:$imgWTab;
+										height:$imgHTab;
+										}
+									}
+							#QHSC_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							 #QHSC_SC ::before {
+							 		@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhExpli.jpg),cover, 50% 25%, auto,0px 0px 10px 5px #570082 inset)
+								
+									}
+								}
+					#Div__QHSD{
+					grid-area:Div__QHSD;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around; 
+					margin:auto;
+					padding:auto;
+							#QHSD_FC{
+								    @include formasC(1vh 0.5vw,2,2,block,1.0,1);
+
+								    	img{
+											width:$imgWTab;
+											height:$imgHTab;
+											}
+									}
+							#QHSD_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							 #QHSD_SC ::before {
+							 		@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhRedes.jpg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset)
+								
+										}   
+					}
+				
+			
+	}
+}
+
+
+@media only screen and (min-width:300px)and(max-width:599px){  
+
+
+	*{
+		margin:0;
+		padding:0;
+	}
+
+
+	$imgWCell:85vw;
+	$imgHCell:25vh;
+
+	@mixin formasC( $margin,$FlexTamaño,$FlexCrecimiento,$display,$opacity,$z-index){
+		margin:$margin;
+		flex-basis: $FlexTamaño;
+		flex-grow: $FlexCrecimiento;	
+		display:$display;
+		opacity: $opacity;
+		z-index: $z-index;
+		
+	}
+	@mixin formas-2C($Content,$Position,$Top,$Left,$Width,$height,$opacity,$z-index,$BackImg,$BackSize,$BackPosi,$ImgRed,$box-shadow){
+		content:$Content;
+		position: $Position;
+		top: $Top; 
+		left: $Left;
+		width: $Width; 
+		height: $height;  
+		opacity: $opacity; 
+		z-index: $z-index;
+		background-image: $BackImg;
+		background-size:$BackSize;
+		background-position:$BackPosi;
+		image-rendering: $ImgRed;
+		box-shadow:$box-shadow;
+
+
+	}
+
+
+
+	.Contenedor__QH{
+		display:flex;
+		color:#000;
+		flex-direction:column;
+		height:240vh;
+		width:90vw;
+		margin: 10vh auto ;
+		
+	
+					#Div__QHSA{
+					grid-area:Div__QHSA;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+
+								#QHSA_FC{
+										@include formasC(1vh 0.5vw,2, 2, inline-block,1.0,1);
+									
+										img{
+											width:$imgWCell;
+											height:$imgHCell;
+											}	    
+										}
+
+								#QHSA_SC{
+										position: relative;
+					  					z-index: 1;	
+										margin:0 0.5vw;
+										padding:0.5vw;		 
+										}
+								#QHSA_SC ::before {
+										@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhP.jpeg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset);
+										
+									}			
+					 
+				  				}
+
+
+					#Div__QHSB{
+					grid-area:Div__QHSB;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+
+							#QHSB_FC{
+								    @include formasC( 1vh 0.5vw,2,2,block,1.0,1);
+								    
+								   	img{
+										width:$imgWCell;
+										height:$imgHCell
+										}  
+									}
+
+							#QHSB_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							#QHSB_SC ::before {
+									@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhInst.jpg),cover, 85% 45%, auto,0px 0px 10px 5px #570082 inset)
+									
+										}
+								}
+				
+					#Div__QHSC{
+					grid-area:Div__QHSC;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around;
+					margin:auto;
+					padding:auto;
+
+							#QHSC_FC{
+									 @include formasC(1vh 0.5vw,2,2,block,1.0,1);
+									 
+									img{
+										width:$imgWCell;
+										height:$imgHCell
+										}
+									}
+							#QHSC_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							 #QHSC_SC ::before {
+							 		@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhExpli.jpg),cover, 50% 25%, auto,0px 0px 10px 5px #570082 inset)
+								
+									}
+								}
+					#Div__QHSD{
+					grid-area:Div__QHSD;
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+					justify-content: space-around; 
+					margin:auto;
+					padding:auto;
+							#QHSD_FC{
+								    @include formasC(1vh 0.5vw,2,2,block,1.0,1);
+
+								    	img{
+											width:$imgWCell;
+										height:$imgHCell
+											}
+									}
+							#QHSD_SC{
+									position: relative;
+				  					z-index: 1;	
+									margin:0 0.5vw;
+									padding:0.5vw;		 
+									}
+							 #QHSD_SC ::before {
+							 		@include formas-2C("",absolute,0,0,100%,100%,.4,-1,url(../Imagenes/galeria/QueHacemos/QhRedes.jpg),cover, 20% 45%, auto,0px 0px 10px 5px #570082 inset)
+								
+										}   
+					}
+				
+			
+	}
+			
+				  	
+			
+				
+
+ 
+
+ }
+
+
+
+	
+
+
+
+
+	
+
+       
+
+
+
+		
+			
+
+	
+			
+
+
+		
+	
+
+		
+
+
+	
+
+
+
+
+	
+
+       
+
+
+
+		
+			
+
+	
+			
+
+
+		
+	
+
+		

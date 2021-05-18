@@ -1,0 +1,158 @@
+
+@media only screen and (min-width: 1199px){
+	#P__Div{
+		height:120vh;
+		display:grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 2fr;
+		grid-gap:8vw ;
+		margin: 0 1vw ;
+		grid-template-areas: 
+				"P__A"
+				"P__B";
+
+
+
+		#P__A{
+			grid-area: P__A;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+
+		}
+
+		
+		#P__B{
+			grid-area: P__B ;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		
+		.P__Text{
+			font-size:25px;
+			margin:0 10px;
+			opacity:0.0;
+			transition: opacity 2s;
+		}
+
+		.P__Text:hover{
+			opacity: 1.0;
+		}
+		.P__Video{
+			width:40vw;
+		}
+	}
+
+
+}
+@media only screen and (min-width:600px)and(max-width:1199px){
+		#P__Div{
+		height:100vh;
+		display:grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 2fr;
+		grid-gap:10vw ;
+		margin: 0 1vw ;
+		grid-template-areas: 
+				"P__A"
+				"P__B";
+
+
+
+		#P__A{
+			grid-area: P__A;
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			justify-content: center;
+			flex-wrap:wrap;
+
+
+		}
+
+		
+		#P__B{
+			grid-area: P__B ;
+			display: flex;
+			flex-direction: column ;
+			justify-content: center;
+			align-items: center;
+			flex-wrap:wrap;
+			
+		}
+		
+		.P__Text{
+			font-size:30px;
+			margin:0 10px;
+			
+		}
+
+		
+		.P__Video{
+			width:100vw;
+			height:40vh;
+			
+		}
+	}
+	
+}
+
+	
+
+@media only screen and (min-width:300px)and(max-width:599px){
+		#P__Div{
+		height:150vh;
+		display:grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 2fr;
+		grid-gap:10vw ;
+		margin: 0 1vw ;
+		grid-template-areas: 
+				"P__A"
+				"P__B";
+
+
+
+		#P__A{
+			grid-area: P__A;
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			justify-content: center;
+			flex-wrap:wrap;
+
+
+		}
+
+		
+		#P__B{
+			grid-area: P__B ;
+			display: flex;
+			flex-direction: column ;
+			justify-content: center;
+			align-items: center;
+			flex-wrap:wrap;
+			
+		}
+		
+		.P__Text{
+			font-size:30px;
+			margin:0 10px;
+			
+		}
+
+		
+		.P__Video{
+			width:100vw;
+			height:40vh;
+			
+		}
+	}
+			
+
+}

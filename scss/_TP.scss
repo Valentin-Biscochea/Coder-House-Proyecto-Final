@@ -1,0 +1,295 @@
+
+
+@media only screen and (min-width: 1199px){
+	body{
+		background-image: linear-gradient(#ffffff,#6a2691);  
+	}
+	#Content__TP{
+			margin:0px 40px;
+			display:grid;
+			grid-template-rows: 0.5fr 0.5fr 0.5fr;
+			grid-template-columns: 3fr 2fr;
+			grid-template-areas: 
+			"Div__TPA Div__TPA"
+			"Div__TPB Div__TPB"
+			"Div__TPC Div__TPC"
+			"Div__TPD Div__TPD";
+			grid-gap:1vw;
+			
+			#Div__TPA
+			{
+				grid-area: Div__TPA;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				#Div__VideoA{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPA :hover {
+				opacity:1.0;
+
+				
+				
+			}
+			#Div__TPB
+			{
+				grid-area: Div__TPB;
+				display: flex;
+				flex-direction: row;
+
+				#Div__VideoB{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPB :hover {
+				opacity:1.0;
+
+			}
+
+			#Div__TPC
+			{
+				grid-area: Div__TPC;
+				display: flex;
+				flex-direction: row;
+				#Div__VideoC{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPC :hover {
+				opacity:1.0;
+
+			}
+			#Div__TPD
+			{
+				grid-area: Div__TPD;
+				display: flex;
+				flex-direction: row;
+				#Div__VideoD{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPD :hover {
+				opacity:1.0;
+
+			}
+		
+			.Div__Tex{
+				font-size:2em;
+				margin:0px 15px;
+				opacity:0.0;
+				transition: all 2s;
+			
+			}
+
+			.Div__Video{
+				margin:0px 15px;
+
+			}
+			 
+			.Div__Video :hover{
+				autoplay:one;
+				
+				cursor:pointer;  } 
+
+		 }
+ }			
+
+			
+@media only screen and (min-width:600px)and(max-width:1199px) {
+
+	#Content__TP{
+			margin:0px 40px;
+			display:grid;
+			grid-template-rows: 0.5fr 0.5fr 0.5fr;
+			grid-template-columns: 3fr 2fr;
+			grid-template-areas: 
+			"Div__TPA Div__TPA"
+			"Div__TPB Div__TPB"
+			"Div__TPC Div__TPC"
+			"Div__TPD Div__TPD";
+			grid-gap:1vw;
+			
+			#Div__TPA
+			{
+				grid-area: Div__TPA;
+				display: flex;
+				flex-direction: row;
+				flex-wrap:wrap;
+				
+				#Div__VideoA{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPA :hover {
+				opacity:1.0;
+				
+
+			}
+			#Div__TPB
+			{
+				grid-area: Div__TPB;
+				display: flex;
+				flex-direction: row;
+				flex-wrap:wrap;
+
+				#Div__VideoB{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPB :hover {
+				opacity:1.0;
+
+			}
+
+			#Div__TPC
+			{
+				grid-area: Div__TPC;
+				display: flex;
+				flex-direction: row;
+				flex-wrap:wrap;
+				#Div__VideoC{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPC :hover {
+				opacity:1.0;
+
+			}
+			#Div__TPD
+			{
+				grid-area: Div__TPD;
+				display: flex;
+				flex-direction: row;
+				flex-wrap:wrap;
+				#Div__VideoD{
+					flex-grow: 1;
+
+				} 
+
+			}
+			#Div__TPD :hover {
+				opacity:1.0;
+
+			}
+		
+			.Div__Tex{
+				margin:0px 15px;
+				opacity:0.0;
+				transition: all 2s;
+				font-size:2em;
+			
+			}
+
+			.Div__Video{
+				margin:0px 15px;
+				video{
+					width:75vw;
+				}
+				
+
+			}
+			 
+			
+
+		 }
+ 	
+
+}
+
+			
+@media only screen and (min-width:300px)and(max-width:599px) {
+
+	#Content__TP{
+			display:flex;
+			flex-direction:column;
+			height:160vh;
+			width:90vw;
+			margin: 15vh auto;
+			overflow: scroll;
+			
+				#Div__TPA
+				{
+					
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					flex-wrap:wrap;
+					
+
+				}
+				
+				#Div__TPB
+				{
+					
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					flex-wrap:wrap;
+
+					
+
+				}
+				
+
+				#Div__TPC
+				{
+					
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					flex-wrap:wrap;
+					
+
+				}
+				
+				#Div__TPD
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					flex-wrap:wrap;
+					
+
+				}
+				
+				.Div__Tex{
+					margin:0px 15px;
+
+					
+				
+				}
+
+				.Div__Video{
+					margin:0px 15px;
+
+					.Video{
+						
+						width:380px;
+					}
+					
+
+
+				}
+			
+			 
+			
+ 	
+
+			}  
+}
+
